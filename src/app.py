@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from Flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -37,7 +37,7 @@ def inicioconductor():
 	return render_template("inicioconductor.html")
 
 @app.route("/inicioadmminlider")
-def inicioadmminlider()
+def inicioadmminlider():
     return render_template("inicioadminlider.html")
 
 @app.route("/documentacionderutas")
@@ -72,10 +72,12 @@ def crearrutas():
 def verrutasconductor():
 	return render_template("verrutasconductor.html")
 
-@app.route("/verrutasadmin)"
+@app.route("/verrutasadmin")
 def verrutasadmin():
 	return render_template("verrutasadmin.html")
 
-@app.route("/")
+
+
+
 if __name__=="__main__": # Para ejecutar la app sin escribir flask run
 	app.run() 
