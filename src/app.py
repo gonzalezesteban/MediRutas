@@ -1,4 +1,4 @@
-from Flask import Flask, render_template
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -13,7 +13,7 @@ def crearcuenta():
 	return render_template("crearcuenta.html")
 
 @app.route("/ingresarcodigos.html")
-def ingresar_codigos():
+def ingresar_codigos_page():
 	return render_template("ingresarcodigos.html")
 
 @app.route("/menuadmin")
@@ -36,9 +36,9 @@ def inicioadmin():
 def inicioconductor():
 	return render_template("inicioconductor.html")
 
-@app.route("/inicioadmminlider")
-def inicioadmminlider():
-    return render_template("inicioadminlider.html")
+@app.route("/inicioadminlider")
+def inicioadminlider():
+	return render_template("inicioadminlider.html")
 
 @app.route("/documentacionderutas")
 def documentacionderutas():
@@ -50,7 +50,7 @@ def reportarproblemas():
 
 @app.route("/vercuentahistorica")
 def vercuentahistorica():
-	return render_template("vercuentashistorica.html")
+	return render_template("vercuentahistorica.html")
 
 @app.route("/verlistadeusuarios")
 def verlistadeusuarios():
